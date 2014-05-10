@@ -1,25 +1,27 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
-<!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  -->
-<title>Srinath Sridhar</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<!-- Meta tags for search engines to crawl -->
-<meta name="robots" content="index,follow">
-<meta name="description" content="Srinath Sridhar. PhD Student">
-<meta name="keywords" content="srinath, sridhar, computer vision, human-computer interaction, PhD student, Max Planck Institute for Informatics, MPI-INF, Germany, India, Christian Theobalt, Antti Oulasvirta, hand tracking, gesture, free-hand interaction, computer vision tracking">
-<link rel="author" href="http://www.mpi-inf.mpg.de/~ssridhar/"/>
+  <head>
+    <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
+    <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  -->
+    <title>Srinath Sridhar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Meta tags for search engines to crawl -->
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="Srinath Sridhar. PhD Student" />
+    <meta name="keywords" content="srinath, sridhar, computer vision, human-computer interaction, PhD student, Max Planck Institute for Informatics, MPI-INF, Germany, India, Christian Theobalt, Antti Oulasvirta, hand tracking, gesture, free-hand interaction, computer vision tracking" />
+    <link rel="author" href="http://www.mpi-inf.mpg.de/~ssridhar/"/>
+    
+    <!-- Fonts and stuff -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" type="text/css" href="css/homepage.css" media="screen" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/iconize.css" />
 
-<!-- Fonts and stuff -->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="css/homepage.css" media="screen" />
-<link rel="stylesheet" type="text/css" media="screen" href="css/iconize.css" />
-<!-- <script src="js/google-code-prettify/prettify.js"></script> -->
+    <!-- Fancy Tabs -->
+    <script type="text/javascript" src="js/hometabs.js" /></script>
 
 </head>
 
-<body>
+<body onload="init()">
   <div id="content">
     <div id="content-inner">
 
@@ -28,113 +30,132 @@
 	<h1>Srinath Sridhar</h1>
 	<a href="mailto:ssridhar@mpi-inf.mpg.de">ssridhar@mpi-inf.mpg.de</a><br>
 	  Room 211C, Campus E1.4, 66123 Saarbrücken, Germany
-      </div>
-
-      <div class="section">
-	<img src="images/srinath_2013_ooty_300w.jpg" width="170" align="left" alt="Srinath Sridhar, Ooty, 2013-Dec" style="margin-left:5px;margin-right:20px; border:1px solid #ddd" />
-	I am a 2<sup>nd</sup> year CS PhD student at the <a href="http://www.mpi-inf.mpg.de/" target="_blank">Max Planck Institute for Informatics</a>. I am advised by <a href="http://www.mpi-inf.mpg.de/~theobalt/" target="_blank">Christian Theobalt</a> and <a href="http://www.mpi-inf.mpg.de/~oantti/" target="_blank">Antti Oulasvirta</a>. I work in computer vision and human-computer interaction.<br><br>
-	
-	I completed a masters degree in <a href="http://eecs.umich.edu" target="_blank">EECS</a> at the <a href="http://umich.edu" target="_blank">University of Michigan, Ann Arbor</a> and a bachelors degree at the College of Engineering Guindy, <a href="http://www.annauniv.edu" target="_blank">Anna University</a>. I also interned at the <a href="http://www.honda-ri.com/HRI_Us/" target="_blank">Honda Research Institute</a> where I worked with <a href="http://www.dgp.toronto.edu/~victorng/" target="_blank">Victor Ng-Thow-Hing</a>.<br><br>
-
-	<!-- I am the administrator of the <a href="http://www.mpi-inf.mpg.de/~lintu/doc/astro/mpi%20observatory.html" target="_blank">MPI Observatory</a>. -->
-<br><br>
-
-        <center>
-	  <a href="http://scholar.google.com/citations?user=qIvZT74AAAAJ&hl=en" target="_blank">Google Scholar</a>
-	  | <a href="http://dblp.dagstuhl.de/pers/hy/s/Sridhar_0002:Srinath.html" target="_blank">DBLP</a> <!-- | <a href="https://twitter.com/srinath1905" target="_blank">Twitter</a> -->
-        <!-- <center><a href="" target="_blank">CV</a> | <a href="http://scholar.google.com/citations?user=qIvZT74AAAAJ&hl=en" target="_blank">Google Scholar</a> | <a href="http://dl.acm.org/author_page.cfm?id=81558065256&coll=DL&dl=ACM&trk=0&cfid=400978045&cftoken=79361691" target="_blank">ACM DL</a></center> -->
-	  | <a href="https://twitter.com/srinath1905" target="_blank">Twitter</a></center>
-      </div>
-
-      <div class="section">
-	<h3>News</h3>
-	<p>
-	  <ul>
-	    <li><a href="http://handtracker.mpi-inf.mpg.de/projects/handtracker_iccv2013/" target="_blank">Project page</a> for our ICCV paper on articulated hand motion tracking and <a href="http://handtracker.mpi-inf.mpg.de/projects/handtracker_iccv2013/dexter1.htm" target="_blank"><b>Dexter 1</b></a>, a dataset for evaluating hand tracking algorithms.
-	  </ul>
 	</div>
+
+	<ul id="tabs">
+	  <li><a href="#about">About</a></li>
+	  <li><a href="#research">Research</a></li>
+	  <li><a href="#education">Education</a></li>
+	  <li><a href="#personal">Personal</a></li>
+	</ul>
+
+
+	<div class="tabContent" id="about">
+	  <div class="section">
+	    <img src="images/srinath_2013_ooty_300w.jpg" width="170" align="left" alt="Srinath Sridhar, Ooty, 2013-Dec" style="margin-left:5px;margin-right:20px; border:1px solid #ddd" />
+	    I am a 2<sup>nd</sup> year CS PhD student at the <a href="http://www.mpi-inf.mpg.de/" target="_blank">Max Planck Institute for Informatics</a>.
+	    I am advised by <a href="http://www.mpi-inf.mpg.de/~theobalt/" target="_blank">Christian Theobalt</a> and <a href="http://www.mpi-inf.mpg.de/~oantti/" target="_blank">Antti Oulasvirta</a>.
+	    I work in computer vision and human-computer interaction.<br /><br />
 	    
-	    <div class="section">
-	      <h3>Publications</h3>
-	      <h4><u>Conference Papers</u></h4>
-	      <p>
-		<i>Interactive Markerless Articulated Hand Motion Tracking using RGB and Depth Data</i><br>
-		  <b>Srinath Sridhar</b>, Antti Oulasvirta, Christian Theobalt<br>
-		  International Conference on Computer Vision (ICCV) 2013.<br>
-		  <a href="http://handtracker.mpi-inf.mpg.de/projects/handtracker_iccv2013/content/handtracker_iccv2013.pdf" target="_blank">PDF</a> | <a href="http://handtracker.mpi-inf.mpg.de/projects/handtracker_iccv2013/" target="_blank">Project Page</a> | <a href="http://handtracker.mpi-inf.mpg.de/projects/handtracker_iccv2013/content/handtracker_iccv2013.bib" target="_blank">BibTeX</a>
-	      </p>
-		  <p>
-		    <i>User-Centered Perspectives for Automotive Augmented Reality</i><br>
-		    Victor Ng-Thow-Hing, Karlin Bark, Lee Beckwith, Cuong Tran, Rishabh Bhandari, <b>Srinath Sridhar</b><br>
-		    International Symposium on on Mixed and Augmented Reality (ISMAR) 2013.<br>
-			  <a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6671262&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D6671262" target="_blank">IEEE Xplore</a>
-		  </p>
-	      <h4><u>Posters</u></h4>
-	      <p>
-		<i>HandSonor: A Customizable Vision-based Control Interface for Musical Expression</i><br>
-		  <b>Srinath Sridhar</b><br>
-		    Extended Abstracts, SIGCHI Conference on Human Factors in Computing Systems (CHI) 2013.<br>
-		      <a href="http://handtracker.mpi-inf.mpg.de/projects/handsonor/handsonor2013.pdf" target="_blank">PDF</a> | <a href="http://handtracker.mpi-inf.mpg.de/projects/handsonor/" target="_blank">Project Page</a> | <a href="http://handtracker.mpi-inf.mpg.de/projects/handsonor/handsonor2013.bib" target="_blank">BibTeX</a>
-	      </p>
-	      <p>
-		<i>Generation of Virtual Display Surfaces for In-vehicle Contextual Augmented Reality</i><br>
-		  <b>Srinath Sridhar</b>, Victor Ng-Thow-Hing<br>
-		    International Symposium on on Mixed and Augmented Reality (ISMAR) 2012.<br>
-		      <a href="" target="_blank">PDF</a> | <a href="" target="_blank">BibTeX</a>
-	      </p>
-	      <h4><u>Technical Reports</u></h4>
-	      <p>
-		<i>CAMFPLAN: A Real-time Markerless Camera Pose Estimation System for Augmented Reality</i><br>
-		  <b>Srinath Sridhar</b>, Vineet R. Kamat<br>
-		    UMCEE Report No. 11-01, Department of Civil and Environmental Engineering, University of Michigan, Ann Arbor 2012.<br>
-		      <a href="pubs/Report_UMCEE-2011-01.pdf" target="_blank">PDF</a> <!-- | <a href="" target="_blank">BibTeX</a> -->
-	      </p>
-	    </div>
+	    I completed a masters degree in <a href="http://eecs.umich.edu" target="_blank">EECS</a> at the <a href="http://umich.edu" target="_blank">University of Michigan, Ann Arbor</a>
+	    and a bachelors degree at the College of Engineering Guindy, <a href="http://www.annauniv.edu" target="_blank">Anna University</a>.
+	    I also interned at the <a href="http://www.honda-ri.com/HRI_Us/" target="_blank">Honda Research Institute</a> where I worked with <a href="http://www.dgp.toronto.edu/~victorng/" target="_blank">Victor Ng-Thow-Hing</a>.<br /><br />    
+	    <!-- I am the administrator of the <a href="http://www.mpi-inf.mpg.de/~lintu/doc/astro/mpi%20observatory.html" target="_blank">MPI Observatory</a>. -->
+	    
+	    <center>
+	      <a href="http://scholar.google.com/citations?user=qIvZT74AAAAJ&hl=en" target="_blank">Google Scholar</a>
+	      | <a href="http://dblp.dagstuhl.de/pers/hy/s/Sridhar_0002:Srinath.html" target="_blank">DBLP</a> <!-- | <a href="https://twitter.com/srinath1905" target="_blank">Twitter</a> -->
+              <!-- <center><a href="" target="_blank">CV</a> | <a href="http://scholar.google.com/citations?user=qIvZT74AAAAJ&hl=en" target="_blank">Google Scholar</a> | <a href="http://dl.acm.org/author_page.cfm?id=81558065256&coll=DL&dl=ACM&trk=0&cfid=400978045&cftoken=79361691" target="_blank">ACM DL</a></center> -->
+	      | <a href="https://twitter.com/srinath1905" target="_blank">Twitter</a>
+	    </center>
+	  </div>
+
+	  <br />
+	  <div class="section">
+	    <h3>News</h3>
+	    <p>
+	      <ul>
+		<li> <a href="http://handtracker.mpi-inf.mpg.de/projects/handtracker_iccv2013/" target="_blank">Project page</a> for our ICCV paper on articulated hand motion tracking and <a href="http://handtracker.mpi-inf.mpg.de/projects/handtracker_iccv2013/dexter1.htm" target="_blank"><b>Dexter 1</b></a>, a dataset for evaluating hand tracking algorithms. </li>
+	      </ul>
+	    </p>
+	  </div>
+	</div>
+	
+	<div class="tabContent" id="research">
+	  <div class="section">
+	    <h3>Publications</h3>
+	    <h4><u>Conference Papers</u></h4>
+	    <p>
+	      <i>Interactive Markerless Articulated Hand Motion Tracking using RGB and Depth Data</i><br />
+	      <b>Srinath Sridhar</b>, Antti Oulasvirta, Christian Theobalt<br />
+	      International Conference on Computer Vision (ICCV) 2013.<br />
+	      <a href="http://handtracker.mpi-inf.mpg.de/projects/handtracker_iccv2013/content/handtracker_iccv2013.pdf" target="_blank">PDF</a> | <a href="http://handtracker.mpi-inf.mpg.de/projects/handtracker_iccv2013/" target="_blank">Project Page</a> | <a href="http://handtracker.mpi-inf.mpg.de/projects/handtracker_iccv2013/content/handtracker_iccv2013.bib" target="_blank">BibTeX</a>
+	    </p>
+	    <p>
+	      <i>User-Centered Perspectives for Automotive Augmented Reality</i><br />
+	      Victor Ng-Thow-Hing, Karlin Bark, Lee Beckwith, Cuong Tran, Rishabh Bhandari, <b>Srinath Sridhar</b><br />
+	      International Symposium on on Mixed and Augmented Reality (ISMAR) 2013.<br />
+	      <a href="http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=6671262&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D6671262" target="_blank">IEEE Xplore</a>
+	    </p>
+	    <h4><u>Posters</u></h4>
+	    <p>
+	      <i>HandSonor: A Customizable Vision-based Control Interface for Musical Expression</i><br />
+	      <b>Srinath Sridhar</b><br />
+	      Extended Abstracts, SIGCHI Conference on Human Factors in Computing Systems (CHI) 2013.<br />
+	      <a href="http://handtracker.mpi-inf.mpg.de/projects/handsonor/handsonor2013.pdf" target="_blank">PDF</a> | <a href="http://handtracker.mpi-inf.mpg.de/projects/handsonor/" target="_blank">Project Page</a> | <a href="http://handtracker.mpi-inf.mpg.de/projects/handsonor/handsonor2013.bib" target="_blank">BibTeX</a>
+	    </p>
+	    <p>
+	      <i>Generation of Virtual Display Surfaces for In-vehicle Contextual Augmented Reality</i><br />
+	      <b>Srinath Sridhar</b>, Victor Ng-Thow-Hing<br />
+	      International Symposium on on Mixed and Augmented Reality (ISMAR) 2012.<br />
+	      <a href="" target="_blank">PDF</a> | <a href="" target="_blank">BibTeX</a>
+	    </p>
+	    <h4><u>Technical Reports</u></h4>
+	    <p>
+	      <i>CAMFPLAN: A Real-time Markerless Camera Pose Estimation System for Augmented Reality</i><br />
+	      <b>Srinath Sridhar</b>, Vineet R. Kamat<br />
+	      UMCEE Report No. 11-01, Department of Civil and Environmental Engineering, University of Michigan, Ann Arbor 2012.<br />
+	      <a href="pubs/Report_UMCEE-2011-01.pdf" target="_blank">PDF</a> <!-- | <a href="" target="_blank">BibTeX</a> -->
+	    </p>
+	  </div>
+	</div>
 
 
-
-	    <div class="section">
-    <h3>Education</h3>
-    <ul>
-      <li> July 2012 - present:<br />
-        Ph.D. student, Computer Science, <a href="http://www.mpi-inf.mpg.de">Max Planck Institute for Informatics</a> and <a href="http://www.cs.uni-saarland.de">Saarland University</a><br />
+	<div class="tabContent" id="education">
+	  <div class="section">
+	    <h3>Education</h3>
+	    <ul>
+	      <li> July 2012 - present:<br />
+		Ph.D. student, Computer Science, <a href="http://www.mpi-inf.mpg.de">Max Planck Institute for Informatics</a> and <a href="http://www.cs.uni-saarland.de">Saarland University</a><br />
 		Supervisors: Prof. Dr. <a href="http://www.mpi-inf.mpg.de/~theobalt/" target="_blank">Christian Theobalt</a> and Prof. Dr. <a href="http://www.mpi-inf.mpg.de/~oantti/" target="_blank">Antti Oulasvirta</a>
-        <br />        <br />
-      </li>
-      <li> September 2010 - April 2012:<br />
-        Master of Science in Engineering, <a href="http://www.eecs.umich.edu/">Electrical Engineering: Systems</a>, <a href="http://www.umich.edu/">University of Michigan, Ann Arbor</a>, USA
-<br /><br /></li>
-      <li> August 2006 - April 2010:<br />
-        Bachelor of Engineering, <a href="http://www.annauniv.edu/RemoteSensing/index.html">Geoinformatics</a>, College of Engineering Guindy, <a href="http://www.annauniv.edu/">Anna University Chennai</a>, India</li>
-    </ul>
-	    </div>
+		<br />        <br />
+	      </li>
+	      <li> September 2010 - April 2012:<br />
+		Master of Science in Engineering, <a href="http://www.eecs.umich.edu/">Electrical Engineering: Systems</a>, <a href="http://www.umich.edu/">University of Michigan, Ann Arbor</a>, USA
+		<br /><br /></li>
+	      <li> August 2006 - April 2010:<br />
+		Bachelor of Engineering, <a href="http://www.annauniv.edu/RemoteSensing/index.html">Geoinformatics</a>, College of Engineering Guindy, <a href="http://www.annauniv.edu/">Anna University Chennai</a>, India</li>
+	    </ul>
+	  </div>
+	</div>
 
-    <!-- 	        <div class="section"> -->
-    <!-- <h3>Service</h3> -->
-    <!-- Reviewer for CHI 2014, IROS 2014. -->
+	<!-- 	        <div class="section"> -->
+	<!-- <h3>Service</h3> -->
+	<!-- Reviewer for CHI 2014, IROS 2014. -->
 
-    <div class="section">
-    <h3>Personal/Miscellaneous</h3>
-    <ul>
-      <li><a href="https://docs.google.com/document/d/1BOD7e6zwy6SS8yT40Kf7Z69qWYMpD1mtCINuJM6jmf4/edit?usp=sharing" target="_blank">Academic Travel Checklist</a></li>
-      <li>Countries Visited</li>
-      <li>Public Key</li>
-      <li>Hobbies</li>
-    </ul>
-    </div>
+	<div class="tabContent" id="personal">
+	  <div class="section">
+	    <h3>Personal/Miscellaneous</h3>
+	    <ul>
+	      <li><a href="https://docs.google.com/document/d/1BOD7e6zwy6SS8yT40Kf7Z69qWYMpD1mtCINuJM6jmf4/edit?usp=sharing" target="_blank">Academic Travel Checklist</a></li>
+	      <li>Countries Visited</li>
+	      <li>Public Key</li>
+	      <li>Hobbies</li>
+	    </ul>
+	  </div>
+	</div>
+	
+	<div class="section">
+	    Page last updated <!--#config timefmt="%b-%Y" --><!--#echo var="LAST_MODIFIED" -->. <!-- <a href="" target="_blank">About page</a>. --> <a href="http://www.mpi-inf.mpg.de/impressum.html" target="_blank">Imprint/Impressum</a>.
+	  </div>
 
-      <div class="section">
-	<hr class="smooth">
-	  Page last updated <!--#config timefmt="%d-%b-%Y" --><!--#echo var="LAST_MODIFIED" -->. <!-- <a href="" target="_blank">About page</a>. --> <a href="http://www.mpi-inf.mpg.de/impressum.html" target="_blank">Imprint/Impressum</a>.
+	  <!-- Google Analytics Include -->
+	  <script src='js/ga/ssridhar.js' type='text/javascript'></script>
+	  <!-- This one is for the domain -->
+	  <!-- <script src='js/ga/srinathsridhar.js' type='text/javascript'></script> -->
+	</div>
       </div>
-
-      <!-- Google Analytics Include -->
-      <script src='js/ga/ssridhar.js' type='text/javascript'></script>
-      <!-- This one is for the domain -->
-      <!-- <script src='js/ga/srinathsridhar.js' type='text/javascript'></script> -->
     </div>
-  </div>
-</div>
 
-</body>
+  </body>
 </html>
