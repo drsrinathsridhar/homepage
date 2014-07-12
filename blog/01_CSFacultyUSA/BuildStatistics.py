@@ -84,15 +84,15 @@ print(float(sum(countries_bachelors.values()))/float(num_records) * 100.0)
 print(float(sum(countries_masters.values()))/float(num_records) * 100.0)
 print(float(sum(countries_phd.values()))/float(num_records) * 100.0)
 
-# # India
-# print("======================\nIndia\n======================")
-# print("%d have a bachelors degree from India. That's %f %%." %(len(india_bachelors), float(len(india_bachelors))/float(num_records) * 100.0))
-# print("%d have a masters degree from India. That's %f %%." %(len(india_masters), float(len(india_masters))/float(num_records) * 100.0))
-# print("%d have a PhD from India. That's %f %%.\n" %(len(india_phd), float(len(india_phd))/float(num_records) * 100.0))
+print("Here is the country wise summary\n\n\n")
+
+# Country-wise table
+print("=============================================================================================================")
+print("          Country          |          Bachelors          |          Masters          |          PhD")
+print("=============================================================================================================")
 
 # Other countries
 for country in countries_of_interest:
-    print("======================\n" + country + "\n======================")
-    print("%d have a bachelors degree from %s. That's %f %%." %(countries_bachelors[country], country, float(countries_bachelors[country])/float(num_records) * 100.0))
-    print("%d have a masters degree from %s. That's %f %%." %(countries_masters[country], country, float(countries_masters[country])/float(num_records) * 100.0))
-    print("%d have a PhD from %s. That's %f %%.\n" %(countries_phd[country], country, float(countries_phd[country])/float(num_records) * 100.0))
+    print("          %s          %d (%f)          %d (%f)          %d (%f)          " %(country, countries_bachelors[country], float(countries_bachelors[country])/float(num_records) * 100.0,
+          countries_masters[country], float(countries_masters[country])/float(num_records) * 100.0,
+    countries_phd[country], float(countries_phd[country])/float(num_records) * 100.0))
