@@ -31,6 +31,7 @@ html, body
     font-size: 12pt;
     /* line-height: 2; */
     -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
 }
 
 #content-inner
@@ -66,7 +67,7 @@ a:active { color: #FF4B33 }
 
 /* Some of this has been copied from http://www.mpi-inf.mpg.de/resources/rgbz-camera/ */
 /* Sections of the page. */
-.section { margin: 15px 5px 5px 10px; line-height: 130%; }
+.section { margin: 15px 5px 5px 10px; line-height: 130%; -webkit-font-smoothing: antialiased; }
 .section h2 { margin-top: 0.5em; margin-bottom: 0.2em; }
 
 /* Logo section. */

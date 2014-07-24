@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Include all necessary libs for nvd3 -->
+<link href="../lib/nvd3/nv.d3.css" rel="stylesheet" type="text/css">
+<script src="../lib/d3/d3.min.js"></script>
+<script src="../lib/nvd3/nv.d3.js"></script>
+<script src="../lib/nvd3/src/tooltip.js"></script>
+<script src="../lib/nvd3/src/utils.js"></script>
+<script src="../lib/nvd3/src/interactiveLayer.js"></script>
+<script src="../lib/nvd3/src/models/legend.js"></script>
+<script src="../lib/nvd3/src/models/axis.js"></script>
+<script src="../lib/nvd3/src/models/scatter.js"></script>
+<script src="../lib/nvd3/src/models/line.js"></script>
+<script src="../lib/nvd3/src/models/lineChart.js"></script>
+<script src="../lib/jquery.js"></script>
+
+<!-- Script to read and parse data -->
+<script src="progress.js"></script>
+
+<style>
+#chart svg {
+  height: 400px;
+}
+</style>
+
+<div id="chart">
+  <svg></svg>
+</div>
