@@ -1,0 +1,9 @@
+#WCChart svg {
+    height: 500px;
+}
+#AuthNumLinesChart svg {
+    height: 350px;
+}
+#AuthCommits svg {
+    height: 350px;
+}

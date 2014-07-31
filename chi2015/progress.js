@@ -3,6 +3,8 @@ var chart;
 var wc = [];
 var timeStamps = [];  // Only the timestamps as an array
 var wcts = []; // The word count vs. timestamps array list
+var authCommitFreq = []; // The number of commits by author
+var authNumLines = []; // Number of lines edited by an author
 
 var TSFormat = d3.time.format("%Y-%m-%d_%H%M"); // The format of the time stamps
 
@@ -49,6 +51,43 @@ function loadTS() {
 	// console.log(wc.length)
 	// console.log(wcts)
 
+	loadAuthFreq();
+    });
+}
+
+function loadAuthFreq() {
+    jQuery.get('AuthorCommitFreq.txt', function(data) {
+	var lines = [];
+	var tmplines = data.split("\n");
+	for(i in tmplines) {
+	    if(tmplines[i].length >= 1)
+		lines.push(tmplines[i]);
+	}
+
+	
+	for(var i = 0; i < lines.length; ++i) {
+	    var authCtr = lines[i].trim().split(" ");
+	    authCommitFreq.push({label: authCtr[1], value: parseInt(authCtr[0])});
+	}
+
+	loadAuthNumLines();
+    });
+}
+
+function loadAuthNumLines() {
+    jQuery.get('AuthorNumLines.txt', function(data) {
+	var lines = [];
+	var tmplines = data.split("\n");
+	for(i in tmplines) {
+	    if(tmplines[i].length >= 1)
+		lines.push(tmplines[i]);
+	}
+
+	
+	for(var i = 0; i < lines.length; ++i) {
+	    var authCtr = lines[i].trim().split(" ");
+	    authNumLines.push({label: authCtr[1], value: parseInt(authCtr[0])});
+	}
 	afterLoadFunc();
     });
 }
@@ -69,12 +108,53 @@ function afterLoadFunc() {
 	    .tickFormat(d3.format('6d'))
 	;
 
-	d3.select('#chart svg')
-	// .datum(sampleData())
+	d3.select('#WCChart svg')
 	    .datum(wcData())
 	    .transition().duration(1000)
 	    .call(chart)
 	;
+
+	nv.utils.windowResize(chart.update);
+
+	return chart;
+    })
+
+    nv.addGraph(function() {
+	var chart = nv.models.pieChart()
+	    .x(function(d) { return d.label })
+	    .y(function(d) { return d.value })
+	    .showLabels(true)     //Display pie labels
+	    .labelThreshold(.05)  //Configure the minimum slice size for labels to show up
+	    .labelType("value") //Configure what type of data to show in the label. Can be "key", "value" or "percent"
+	    .donut(true)          //Turn on Donut mode. Makes pie chart look tasty!
+	    .donutRatio(0.35)     //Configure how big you want the donut hole size to be.
+	;
+
+	d3.select("#AuthNumLinesChart svg")
+            .datum(authNumLines)
+            .transition().duration(1000)
+            .call(chart);
+
+	nv.utils.windowResize(chart.update);
+
+	return chart;
+    })
+
+    nv.addGraph(function() {
+	var chart = nv.models.pieChart()
+	    .x(function(d) { return d.label })
+	    .y(function(d) { return d.value })
+	    .showLabels(true)     //Display pie labels
+	    .labelThreshold(.05)  //Configure the minimum slice size for labels to show up
+	    .labelType("value") //Configure what type of data to show in the label. Can be "key", "value" or "percent"
+	    .donut(true)          //Turn on Donut mode. Makes pie chart look tasty!
+	    .donutRatio(0.35)     //Configure how big you want the donut hole size to be.
+	;
+
+	d3.select("#AuthCommits svg")
+            .datum(authCommitFreq)
+            .transition().duration(1000)
+            .call(chart);
 
 	nv.utils.windowResize(chart.update);
 
