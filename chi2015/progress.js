@@ -1,23 +1,57 @@
 // Wrapping in nv.addGraph allows for '0 timeout render', stores rendered charts in nv.graphs, and may do more in the future... it's NOT required
 var chart;
 var wc = [];
+var timeStamps = [];  // Only the timestamps as an array
+var wcts = []; // The word count vs. timestamps array list
 
-jQuery.get('WordCount.txt', function(data) {
-    var lines = [];
-    var tmplines = data.split("\n");
-    for(i in tmplines) {
-	lines.push(parseInt(tmplines[i]));
-    }
+var TSFormat = d3.time.format("%Y-%m-%d_%H%M"); // The format of the time stamps
 
-    for(var i = 0; i < lines.length; ++i) {
-	if(isNaN(lines[i]) == false) {
-	    wc.push({x: i, y: lines[i]});
-	    // console.log(lines[i])
+window.onload = function() {
+    loadWC();
+};
+
+function loadWC() {
+    jQuery.get('WordCount.txt', function(data) {
+	var lines = [];
+	var tmplines = data.split("\n");
+	for(i in tmplines) {
+	    if(tmplines[i].length >= 1)
+		lines.push(parseInt(tmplines[i]));
 	}
-    }
 
-    afterLoadFunc();
-});
+	for(var i = 0; i < lines.length; ++i) {
+	    if(isNaN(lines[i]) == false) {
+		wc.push(lines[i]);
+	    }
+	}
+
+	loadTS();
+    });
+}
+
+function loadTS() {
+    jQuery.get('TimeStamps.txt', function(data) {
+	var lines = [];
+	var tmplines = data.split("\n");
+	for(i in tmplines) {
+	    if(tmplines[i].length >= 1)
+		lines.push(tmplines[i]);
+	}
+
+	for(var i = 0; i < lines.length; ++i) {
+	    timeStamps.push(TSFormat.parse(lines[i]));
+	    wcts.push({x: timeStamps[i], y: wc[i]});
+	    // timeStamps.push(lines[i]);
+	    // wcts.push({x: i, y: wc[i]});
+	}
+
+	// console.log(timeStamps.length)
+	// console.log(wc.length)
+	// console.log(wcts)
+
+	afterLoadFunc();
+    });
+}
 
 function afterLoadFunc() {
     nv.addGraph(function() {
@@ -26,13 +60,13 @@ function afterLoadFunc() {
 	;
 
 	chart.xAxis
-	    .axisLabel('Time (8 hour increments)')
-	    .tickFormat(d3.format(',r'))
+	    .axisLabel('Time')
+	    .tickFormat(function(d) { return d3.time.format('%d-%b, %I %p')(new Date(d)); })
 	;
 
 	chart.yAxis
 	    .axisLabel('Number of Words')
-	    .tickFormat(d3.format('.3s'))
+	    .tickFormat(d3.format('6d'))
 	;
 
 	d3.select('#chart svg')
@@ -49,14 +83,14 @@ function afterLoadFunc() {
 };
 
 function wcData() {
-    if(wc.length < 1) {
-	console.log('Looks like file reading failed. No word counting data.');
+    if(wc.length < 1 || timeStamps.length < 1 || wc.length != timeStamps.length) {
+	console.log('Looks like file reading failed or the array sizes do not match.');
 	return [];
     }
 
     return [
 	{
-	    values: wc,
+	    values: wcts,
 	    key: 'PDF Word Count',
 	    color: '#2ca02c'
 	}
