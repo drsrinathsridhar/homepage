@@ -45,7 +45,7 @@
 
       <div class="section head">
 	<h1>CHI 2015 Paper Writing Statistics</h1>
-	<h4>Updated every 8 hours (or sometimes less).</h4>
+	<h4>Updated at least every 8 hours.</h4>
       </div>
 
       <div class="section">
@@ -58,7 +58,12 @@
 
       <div class="section">
 	<h3>Author-wise Statistics</h3>
-	Pie charts of the number of lines edited by each author, and the number of commits per author.
+	<p>Pie charts of the number of lines edited by each author, and the number of commits per author. This data comes from the Subversion repository for the paper.</p>
+	<p><b><u>Note:</u></b> These charts might not reflect reality due to two reasons.</p>
+	<ul>
+	  <li>Author A could commit multiple times to the repo changing only 1 character per commit thus increasing his/her commit count.</li>
+	  <li>If author A writes 100 lines and author B moves it to a new file, then author B becomes the <i>owner</i>. This would obviously increase his/her line count.</li>
+	</ul>
 	<div id="AuthNumLinesChart">
 	  <svg></svg>
 	</div>

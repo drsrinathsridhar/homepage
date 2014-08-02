@@ -100,7 +100,8 @@ function afterLoadFunc() {
 
 	chart.xAxis
 	    .axisLabel('Time')
-	    .tickFormat(function(d) { return d3.time.format('%d-%b, %I %p')(new Date(d)); })
+	    // .tickFormat(function(d) { return d3.time.format('%d-%b, %I %p')(new Date(d)); })
+	    .tickFormat(function(d) { return d3.time.format('%d-%b')(new Date(d)); })
 	;
 
 	chart.yAxis
