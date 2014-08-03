@@ -3,10 +3,10 @@
   <channel>
     <title>Srinath Sridhar</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
-    <link>http://localhost~ssridhar//</link>
-    <atom:link href="http://localhost~ssridhar//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 03 Aug 2014 18:36:15 +0200</pubDate>
-    <lastBuildDate>Sun, 03 Aug 2014 18:36:15 +0200</lastBuildDate>
+    <link>http://mpi-inf.mpg.de/~ssridharhttp://mpi-inf.mpg.de/~ssridhar/</link>
+    <atom:link href="http://mpi-inf.mpg.de/~ssridharhttp://mpi-inf.mpg.de/~ssridhar/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 03 Aug 2014 18:38:15 +0200</pubDate>
+    <lastBuildDate>Sun, 03 Aug 2014 18:38:15 +0200</lastBuildDate>
     <generator>Jekyll v2.1.1</generator>
     
       <item>
@@ -26,8 +26,8 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 
 </description>
         <pubDate>Sun, 03 Aug 2014 19:25:14 +0200</pubDate>
-        <link>http://localhost~ssridhar//jekyll/update/2014/08/03/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://localhost~ssridhar//jekyll/update/2014/08/03/welcome-to-jekyll/</guid>
+        <link>http://mpi-inf.mpg.de/~ssridharhttp://mpi-inf.mpg.de/~ssridhar/jekyll/update/2014/08/03/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://mpi-inf.mpg.de/~ssridharhttp://mpi-inf.mpg.de/~ssridhar/jekyll/update/2014/08/03/welcome-to-jekyll/</guid>
         
         
         <category>jekyll</category>
