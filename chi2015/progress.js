@@ -94,8 +94,16 @@ function loadAuthNumLines() {
 
 function afterLoadFunc() {
     nv.addGraph(function() {
-	var chart = nv.models.lineChart()
-	    .useInteractiveGuideline(true)
+	// var chart = nv.models.lineChart()
+	//     .transitionDuration(350)
+	//     .useInteractiveGuideline(true)
+	// ;
+	var chart = nv.models.multiBarChart()
+	    .transitionDuration(350)
+	    .reduceXTicks(true)   //If 'false', every single x-axis tick label will be rendered.
+	    .rotateLabels(-30)      //Angle to rotate x-axis labels.
+	    .showControls(false)   //Allow user to switch between 'Grouped' and 'Stacked' mode.
+	    .groupSpacing(0.1)    //Distance between each group of bars.
 	;
 
 	chart.xAxis
