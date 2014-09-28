@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Srinath Sridhar</title>
-    <description>Srinath Sridhar: Blog.</description>
-    <link>http://mpi-inf.mpg.de/~ssridharhttp://mpi-inf.mpg.de/~ssridhar/</link>
-    <atom:link href="http://mpi-inf.mpg.de/~ssridharhttp://mpi-inf.mpg.de/~ssridhar/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 28 Sep 2014 18:31:42 +0200</pubDate>
-    <lastBuildDate>Sun, 28 Sep 2014 18:31:42 +0200</lastBuildDate>
+    <description>Srinath Sridhar: Blog</description>
+    <link>http://mpi-inf.mpg.de/~ssridhar/bloghttp://mpi-inf.mpg.de/~ssridhar/</link>
+    <atom:link href="http://mpi-inf.mpg.de/~ssridhar/bloghttp://mpi-inf.mpg.de/~ssridhar/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 28 Sep 2014 19:03:42 +0200</pubDate>
+    <lastBuildDate>Sun, 28 Sep 2014 19:03:42 +0200</lastBuildDate>
     <generator>Jekyll v2.1.1</generator>
     
       <item>
@@ -14,8 +14,8 @@
         <description>
 </description>
         <pubDate>Sun, 28 Sep 2014 20:30:00 +0200</pubDate>
-        <link>http://mpi-inf.mpg.de/~ssridharhttp://mpi-inf.mpg.de/~ssridhar/2014/testing.html</link>
-        <guid isPermaLink="true">http://mpi-inf.mpg.de/~ssridharhttp://mpi-inf.mpg.de/~ssridhar/2014/testing.html</guid>
+        <link>http://mpi-inf.mpg.de/~ssridhar/bloghttp://mpi-inf.mpg.de/~ssridhar/2014/testing.html</link>
+        <guid isPermaLink="true">http://mpi-inf.mpg.de/~ssridhar/bloghttp://mpi-inf.mpg.de/~ssridhar/2014/testing.html</guid>
         
         
         <category>faculty</category>
@@ -41,8 +41,8 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
 
 </description>
         <pubDate>Sun, 03 Aug 2014 19:25:14 +0200</pubDate>
-        <link>http://mpi-inf.mpg.de/~ssridharhttp://mpi-inf.mpg.de/~ssridhar/2014/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://mpi-inf.mpg.de/~ssridharhttp://mpi-inf.mpg.de/~ssridhar/2014/welcome-to-jekyll.html</guid>
+        <link>http://mpi-inf.mpg.de/~ssridhar/bloghttp://mpi-inf.mpg.de/~ssridhar/2014/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://mpi-inf.mpg.de/~ssridhar/bloghttp://mpi-inf.mpg.de/~ssridhar/2014/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
