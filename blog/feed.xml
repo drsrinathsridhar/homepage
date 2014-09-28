@@ -5,8 +5,8 @@
     <description>Srinath Sridhar: Blog</description>
     <link>http://mpi-inf.mpg.de/~ssridhar/bloghttp://mpi-inf.mpg.de/~ssridhar/</link>
     <atom:link href="http://mpi-inf.mpg.de/~ssridhar/bloghttp://mpi-inf.mpg.de/~ssridhar/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 28 Sep 2014 19:23:37 +0200</pubDate>
-    <lastBuildDate>Sun, 28 Sep 2014 19:23:37 +0200</lastBuildDate>
+    <pubDate>Sun, 28 Sep 2014 19:26:03 +0200</pubDate>
+    <lastBuildDate>Sun, 28 Sep 2014 19:26:03 +0200</lastBuildDate>
     <generator>Jekyll v2.1.1</generator>
     
       <item>
@@ -22,17 +22,6 @@
         <category>faculty</category>
         
         <category>jobs</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome To Jekyll</title>
-        <description>
-</description>
-        <pubDate>Sun, 03 Aug 2014 00:00:00 +0200</pubDate>
-        <link>http://mpi-inf.mpg.de/~ssridhar/bloghttp://mpi-inf.mpg.de/~ssridhar/2014/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://mpi-inf.mpg.de/~ssridhar/bloghttp://mpi-inf.mpg.de/~ssridhar/2014/welcome-to-jekyll.html</guid>
-        
         
       </item>
     
