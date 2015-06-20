@@ -201,3 +201,9 @@ a[href ^="mailto:"] {
 	padding-right: 0px !important;
 	background: none !important;
 }
+
+.textLink
+{
+	padding: 0px 0px 0px 0px !important;
+	background: none !important;
+}

@@ -59,10 +59,10 @@ hr.smooth
     background-image:      -o-linear-gradient(left, #ccc, #333, #ccc); 
 }
 
-a:link { color: #0066CC }
-a:visited { color: #743399 }
-a:hover { color: #FF4B33 }
-a:active { color: #FF4B33 }
+a:link { color: #0066CC; text-decoration: none; }
+a:visited { color: #743399; text-decoration: none; }
+a:hover { color: #FF4B33; text-decoration: none; }
+a:active { color: #FF4B33; text-decoration: none; }
 
 
 /* Some of this has been copied from http://www.mpi-inf.mpg.de/resources/rgbz-camera/ */
@@ -114,3 +114,35 @@ ul#tabs li { display: inline; }
 ul#tabs li a { color: #42454a; background-color: #dedbde; border: 1px solid #c9c3ba; border-bottom: none; padding: 0.3em; text-decoration: none; }
 ul#tabs li a:hover { background-color: #f1f0ee; }
 ul#tabs li a.selected { color: #000; background-color: #e9e9e9; font-weight: 500; padding: 0.7em 0.3em 0.38em 0.3em; }
+
+/* For displaying projects with a thumbnail image on the left and description on the right */
+/* Display lists in a grid of fixed size. This is useful when lists have associated images. */
+/* Idea from http://blog.mozilla.org/webdev/2009/02/20/cross-browser-inline-block/ */
+li.pgrid
+{
+    width: auto;
+    height: 100px;
+    /* border: 1px solid #000; */
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+    zoom: 1;
+    *display: inline;
+    _height: 100px;
+}
+/* Formatting for each item in a 2D grid. This is used typically in the downloads section. */
+.pgriditem
+{
+    font-size: 10pt;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+.pgriditem img
+{
+    text-align: center;
+    height:100px;
+    width:auto;
+    border: 1px solid #eee;
+    box-shadow: 0px 0px 2px #444444;
+}
