@@ -1,12 +1,12 @@
 India
 USA (2008, 2010-2012, 2015)
-  - Atlanta, Ann Arbor, Sunnyvale, Las Vegas, Seattle, Boston
+  - Atlanta, Ann Arbor, Sunnyvale, Las Vegas, San Francisco, Seattle, Boston, Redmond, Portland
+Germany (2012-)
+  - Saarbruecken, Frankfurt, Berlin, Munich, Koeln
 UK (2008)
   - London, Birmingham
 Bahrain (2010)
-Germany (2012-)
-  - Saarbruecken, Frankfurt, Berlin, Munich, Koeln
-France (2012, 2013, 2014)
+France (2012, 2013, 2014, 2016)
   - Paris, Grenoble, Metz, Strasbourg
 The Netherlands (2012, 2014)
   - Vaalserberg
@@ -21,4 +21,5 @@ Austria (2015)
   - Kleinwalsertal
 South Korea (2015)
   - Seoul
-
+Switzerland (2015, 2016)
+  - Zurich
