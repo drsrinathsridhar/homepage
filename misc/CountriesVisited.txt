@@ -1,25 +1,29 @@
-India
-USA (2008, 2010-2012, 2015)
-  - Atlanta, Ann Arbor, Sunnyvale, Las Vegas, San Francisco, Seattle, Boston, Redmond, Portland
-Germany (2012-)
+Countries count only if I have been outside the airport.
+Cities count only if I have slept there overnight or if I have had a meal outside an airport.
+
+1. India
+2. USA (2008, 2010-2012, 2015, 2016)
+  - Atlanta, Ann Arbor, Sunnyvale, Fremont (CA), Las Vegas, San Jose
+  - San Francisco, Seattle, Boston, Redmond, Portland, Los Angeles, Williams (AZ)
+3. Germany (2012-)
   - Saarbruecken, Frankfurt, Berlin, Munich, Koeln
-UK (2008)
+4. UK (2008)
   - London, Birmingham
-Bahrain (2010)
-France (2012, 2013, 2014, 2016)
+5. Bahrain (2010)
+6. France (2012, 2013, 2014, 2016)
   - Paris, Grenoble, Metz, Strasbourg
-The Netherlands (2012, 2014)
+7. The Netherlands (2012, 2014)
   - Vaalserberg
-Belgium (2012, 2014)
+8. Belgium (2012, 2014)
   - Vaalserberg
-Luxembourg (2013)
-Australia (2013)
+9. Luxembourg (2013)
+10. Australia (2013)
   - Sydney
-Japan (2014)
+11. Japan (2014)
   - Osaka, Kyoto, Tokyo
-Austria (2015)
+12. Austria (2015)
   - Kleinwalsertal
-South Korea (2015)
+13. South Korea (2015)
   - Seoul
-Switzerland (2015, 2016)
+14. Switzerland (2015, 2016)
   - Zurich
