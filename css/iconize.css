@@ -11,6 +11,10 @@ a[href *="scholar.google.com"] {
 	background: transparent url(../icns/icon_gscholar.gif) no-repeat center left;
 }
 
+a[href *="semanticscholar.org"] {
+	padding: 5px 0px 5px 20px;
+	background: transparent url(../icns/icon_sscholar.gif) no-repeat center left;
+}
 
 a[href *="github.com"] {
 	padding: 5px 0px 5px 20px;
