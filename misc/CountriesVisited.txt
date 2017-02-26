@@ -3,8 +3,8 @@ Cities count only if I have slept there overnight or if I have had a meal outsid
 
 1. India
 2. USA (2008, 2010-2012, 2015, 2016)
-  - Atlanta, Ann Arbor, Sunnyvale, Fremont (CA), Las Vegas, San Jose
-  - San Francisco, Seattle, Boston, Redmond, Portland, Los Angeles, Williams (AZ)
+  - Atlanta, Ann Arbor, Sunnyvale, Mountain View, Fremont (CA), Las Vegas, San Jose
+  - San Francisco, Seattle, Boston, Redmond (WA), Portland (OR), Los Angeles, Williams (AZ)
 3. Germany (2012-)
   - Saarbruecken, Frankfurt, Berlin, Munich, Koeln
 4. UK (2008)
@@ -12,8 +12,8 @@ Cities count only if I have slept there overnight or if I have had a meal outsid
 5. Bahrain (2010)
 6. France (2012, 2013, 2014, 2016)
   - Paris, Grenoble, Metz, Strasbourg
-7. The Netherlands (2012, 2014)
-  - Vaalserberg
+7. The Netherlands (2012, 2014, 2016)
+  - Vaalserberg, Amsterdam
 8. Belgium (2012, 2014)
   - Vaalserberg
 9. Luxembourg (2013)
