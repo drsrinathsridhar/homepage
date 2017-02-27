@@ -1,9 +1,9 @@
 // Adapted from http://people.mpi-inf.mpg.de/~theobalt/
 
 var image1 = new Image();  // Inactive image ...
-image1.src = "images/www1.jpg";  // .. here's its image file
+image1.src = "images/www1_300w.jpg";  // .. here's its image file
 var image2  = new Image();  // Active (mouseover) image
-image2.src  = "images/www2.jpg"; // .. and _its_ image file
+image2.src  = "images/www2_300w.jpg"; // .. and _its_ image file
 
 function inact() // For "inactive" image
 {
