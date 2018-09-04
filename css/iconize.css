@@ -1,9 +1,19 @@
 /* Iconize 0.5 */
 
-/* Added by Srinath: Google Scholar, github, and twitter */
+/* Added by Srinath: Google Scholar, Github, Linkedin, Instagram, and Twitter */
 a[href *="twitter.com"] { 
 	padding: 5px 0px 5px 20px;
 	background: transparent url(../icns/icon_twitter.gif) no-repeat center left;
+}
+
+a[href *="linkedin.com"] { 
+	padding: 5px 0px 5px 20px;
+	background: transparent url(../icns/icon_linkedin.gif) no-repeat center left;
+}
+
+a[href *="instagram.com"] { 
+	padding: 5px 0px 5px 20px;
+	background: transparent url(../icns/icon_instagram.gif) no-repeat center left;
 }
 
 a[href *="scholar.google.com"] {
