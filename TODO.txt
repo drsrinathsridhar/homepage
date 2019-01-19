@@ -1,0 +1,3 @@
+- Download all paper PDFs from external sources and save them locally.
+- Update 3DV paper links with datasets, models, etc.
+- Add arxiv papers.
