@@ -1,4 +1,3 @@
 - Download all paper PDFs from external sources and save them locally.
-- Update 3DV paper links with datasets, models, etc.
-- Add arxiv papers.
-- Add Stanford favicon from https://identity.stanford.edu/web-mobile.html#web-principles
+- Update geometry page
+- Update research statement and bio
