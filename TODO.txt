@@ -1,4 +1,4 @@
 - Download all paper PDFs from external sources and save them locally.
 - Update geometry page
 - Update research statement and bio
-- Add a blog and cross-post.
+- Add a blog and cross-post (http://iliad.stanford.edu/blog/2018/11/26/altruistic-autonomy-beating-congestion-on-shared-roads/)
