@@ -1,3 +1,4 @@
 - Download all paper PDFs from external sources and save them locally.
 - Update geometry page
 - Update research statement and bio
+- Add a blog and cross-post.
