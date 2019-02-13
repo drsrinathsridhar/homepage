@@ -6,8 +6,8 @@ Cities count only if I have slept there overnight or if I have had a meal outsid
   - Atlanta, Ann Arbor, Sunnyvale, Mountain View, Fremont (CA), Las Vegas, San Jose
   - San Francisco, Seattle, Boston, Redmond (WA), Portland (OR), Los Angeles, Williams (AZ)
   - Denver, Colorado Springs, Sweet Home (OR), Desert Hot Springs (CA)
-3. Germany (2012-2017)
-  - Saarbruecken, Frankfurt, Berlin, Munich, Koeln
+3. Germany (2012-2017, 2018)
+  - Saarbruecken, Frankfurt, Berlin, Munich, Koeln, Heidelberg
 4. UK (2008)
   - London, Birmingham
 5. Bahrain (2010)
@@ -26,5 +26,7 @@ Cities count only if I have slept there overnight or if I have had a meal outsid
   - Kleinwalsertal
 13. South Korea (2015)
   - Seoul
-14. Switzerland (2015, 2016)
-  - Zurich
+14. Switzerland (2015, 2016, 2018)
+  - Zurich, Thun
+15. Mexico (2018)
+  - Mexico City
