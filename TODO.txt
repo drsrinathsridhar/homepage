@@ -4,5 +4,6 @@
 - Update research statement and bio
 - Add a blog and cross-post (http://iliad.stanford.edu/blog/2018/11/26/altruistic-autonomy-beating-congestion-on-shared-roads/)
 - Perhaps embed medium posts in a separate tab.
-- Add links to yt videos (esp. for VNect, WatchSense, etc.)
+- Add links to yt videos (esp. for VNect, WatchSense, etc.), github code, datasets.
 - Create a sumary video like James Tompkin
+- Add press articles for VNect and WatchSense with a star-type symbol (see https://mhsung.github.io/)
