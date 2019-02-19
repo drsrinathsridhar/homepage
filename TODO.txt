@@ -8,3 +8,4 @@
 - Create a sumary video like James Tompkin
 - Add press articles for VNect and WatchSense with a star-type symbol (see https://mhsung.github.io/)
 - Add CHI workshop papers with Anna and Myroslav.
+- In bio, say "I am a postdoctoral researcher at STanford working on XX, YY. I am advised by Leonidas Guibas."
