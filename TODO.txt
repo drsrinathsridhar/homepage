@@ -11,3 +11,4 @@
 - In bio, say "I am a postdoctoral researcher at STanford working on XX, YY. I am advised by Leonidas Guibas."
 - Change header of website to Srinath Sridhar - Computer Vision Researcher or something like that
 - Move email and address to a more prominent location below CV perhaps?
+- Add youtube links to news TV reports (https://www.youtube.com/watch?v=2rnoxssNmwc, https://www.youtube.com/watch?v=764lD5ZBkyQ)
