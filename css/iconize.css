@@ -1,6 +1,6 @@
 /* Iconize 0.5 */
 
-/* Added by Srinath: Google Scholar, Github, Linkedin, Instagram, and Twitter */
+/* Added by Srinath: Google Scholar, Github, Linkedin, Instagram, Twitter, and YouTube */
 a[href *="twitter.com"] { 
 	padding: 5px 0px 5px 20px;
 	background: transparent url(../icns/icon_twitter.gif) no-repeat center left;
@@ -31,9 +31,13 @@ a[href *="github.com"] {
 	background: transparent url(../icns/icon_github.gif) no-repeat center left;
 }
 
+a[href *="youtube.com"], a[href *="youtu.be"] {
+	padding: 5px 0px 5px 20px;
+	background: transparent url(../icns/icon_yt.gif) no-repeat center left;
+}
 
 /* websites (pictures and movies) */
-a[href *="youtube.com/watch?"], a[href *="sevenload.com/videos/"], a[href *="metacafe.com/watch/"] { 
+a[href *="sevenload.com/videos/"], a[href *="metacafe.com/watch/"] { 
 	padding: 5px 0px 5px 20px;
 	background: transparent url(../icns/icon_film.gif) no-repeat center left;
 }
