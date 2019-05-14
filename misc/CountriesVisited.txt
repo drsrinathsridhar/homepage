@@ -11,9 +11,9 @@ Cities count only if I have slept there overnight or if I have had a meal outsid
 4. UK (2008)
   - London, Birmingham
 5. Bahrain (2010)
-6. France (2012, 2013, 2014, 2016, 2017)
+6. France (2012, 2013, 2014, 2016, 2017, 2019)
   - Paris, Grenoble, Metz, Strasbourg
-7. The Netherlands (2012, 2014, 2016)
+7. The Netherlands (2012, 2014, 2016, 2019)
   - Vaalserberg, Amsterdam
 8. Belgium (2012, 2014)
   - Vaalserberg
@@ -26,7 +26,7 @@ Cities count only if I have slept there overnight or if I have had a meal outsid
   - Kleinwalsertal
 13. South Korea (2015)
   - Seoul
-14. Switzerland (2015, 2016, 2018)
-  - Zurich, Thun
+14. Switzerland (2015, 2016, 2018, 2019)
+  - Zurich, Thun, Lausanne, Geneva
 15. Mexico (2018)
   - Mexico City
