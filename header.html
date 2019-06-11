@@ -26,3 +26,15 @@
 
 <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+
+<style type="text/css">
+    .hidden {display:none;}
+</style>
+<script type="text/javascript" src="/scripts/jquery.js"></script>
+<script type="text/javascript">
+    $('html').addClass('hidden');
+    $(document).ready(function() {    // EDIT: From Adam Zerner's comment below: Rather use load: $(window).on('load', function () {...});
+      $('html').show();  // EDIT: Can also use $('html').removeClass('hidden');
+     });
+
+</script>
