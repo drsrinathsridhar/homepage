@@ -1,4 +1,3 @@
-- Improve page load speed and short flicker at the beginning
 - Add EG honorable mention and icon for it.
 - Download all paper PDFs from external sources and save them locally.
 - Add hyperlinks to code and datasets
