@@ -225,3 +225,8 @@ a[href ^="mailto:"] {
 	padding: 0px 0px 0px 0px !important;
 	background: none !important;
 }
+
+html {
+    visibility: visible;
+    opacity: 1;
+}
