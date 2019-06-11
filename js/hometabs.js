@@ -6,13 +6,16 @@ var contentDivs = new Array();
 function init() {
     // Grab the tab links and content divs from the page
     var tabListItems = document.getElementById('tabs').childNodes;
-    for ( var i = 0; i < tabListItems.length; i++ ) {
-        if ( tabListItems[i].nodeName == "LI" ) {
+    for ( var i = 0; i < tabListItems.length; i++ )
+    {
+        if ( tabListItems[i].nodeName == "LI" )
+        {
             var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
             var id = getHash( tabLink.getAttribute('href') );
+            console.log(id);
             tabLinks[id] = tabLink;
             contentDivs[id] = document.getElementById( id );
-	    console.log(contentDivs[id]);
+	        console.log(contentDivs[id]);
         }
     }
 
