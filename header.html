@@ -27,13 +27,12 @@
 <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 
+<!-- Prevent FOUC (flash of unstyled content) - http://johnpolacek.com/2012/10/03/help-prevent-fouc/ -->
 <style type="text/css">
-    .hidden {display:none;}
+    .no-fouc {display: none;}
 </style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
 <script type="text/javascript">
-    $('html').addClass('hidden');
-    $(document).ready(function() {    // EDIT: From Adam Zerner's comment below: Rather use load: $(window).on('load', function () {...});
-      $('html').show();  // EDIT: Can also use $('html').removeClass('hidden');
-     });
+    document.documentElement.className = 'no-fouc';
+    // add to document ready: $('.no-fouc').removeClass('no-fouc');
 </script>
