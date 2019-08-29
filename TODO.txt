@@ -12,3 +12,4 @@
 - Add youtube links to news TV reports (https://www.youtube.com/watch?v=2rnoxssNmwc, https://www.youtube.com/watch?v=764lD5ZBkyQ)
 - Add old videos to homepage (e.g., https://www.youtube.com/watch?v=oBYI5GRXPhQ)
 - Clean website with nice details (https://people.cs.uchicago.edu/~comar/)
+- Summer school teaching (http://handtracker.mpi-inf.mpg.de/events/ssss2013/)
