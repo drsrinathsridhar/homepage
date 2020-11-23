@@ -18,6 +18,7 @@ html, body
 
 /* Global settings for hyperlinks and hr */
 a:link { color: #820000; text-decoration: none; }
+a.empty { color: #820000; text-decoration: none; }
 a:visited { color: #8C1515; text-decoration: none; }
 a:hover { color: #FF4B33; text-decoration: none; }
 a:active { color: #FF4B33; text-decoration: none; }
@@ -48,7 +49,8 @@ hr.smooth
     background-color: white;
     box-shadow: 0px 1px 5px #999;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 12pt;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-size: 14pt;
     /* line-height: 2; */
     -webkit-text-size-adjust: none;
     -webkit-font-smoothing: antialiased;
@@ -60,6 +62,29 @@ hr.smooth
 
 /* For paragraphs */
 .publist {width: 900px; margin: 0; margin-top: 10px; margin-bottom: 10px; border: 1px solid #8a887d; padding: 5px; background-color: #f6f3e5;}
+
+/* For highlighting */
+.highlight
+{
+    width: 650px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #8a887d;
+    padding: 5px;
+    background-color: #f6f3e5;
+    float: right;
+}
+
+/* From https://www.cs.columbia.edu/~shurans/style.css */
+#moreNews {
+    display: none;
+}
+
+#lessNewsBtn {
+    display: none;
+}
+
 
 /* Tabs control */
 /* 1000, 800 . Change below to adjust for main page width*/
