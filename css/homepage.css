@@ -64,7 +64,22 @@ hr.smooth
 .publist {width: 900px; margin: 0; margin-top: 10px; margin-bottom: 10px; border: 1px solid #8a887d; padding: 5px; background-color: #f6f3e5;}
 
 /* For people */
-.personlist {width: 130px; margin: 0; margin-top: 10px; margin-bottom: 10px; border: 1px solid #8a887d; padding: 5px; background-color: #f6f3e5;}
+#block_container
+{
+    display: flex;
+    justify-content: left;
+    margin-right: 200px;
+}
+.personlist
+{
+    width: 130px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #8a887d;
+    padding: 5px;
+    background-color: #f6f3e5;
+}
 
 
 /* For highlighting */
