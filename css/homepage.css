@@ -63,6 +63,10 @@ hr.smooth
 /* For paragraphs */
 .publist {width: 900px; margin: 0; margin-top: 10px; margin-bottom: 10px; border: 1px solid #8a887d; padding: 5px; background-color: #f6f3e5;}
 
+/* For people */
+.personlist {width: 130px; margin: 0; margin-top: 10px; margin-bottom: 10px; border: 1px solid #8a887d; padding: 5px; background-color: #f6f3e5;}
+
+
 /* For highlighting */
 .highlight
 {
