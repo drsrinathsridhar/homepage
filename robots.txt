@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /2020/
+Disallow: /old/
