@@ -4,77 +4,136 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- ============================================================
+         SEO & Meta
+         Update title, description, and keywords as needed.
+         ============================================================ -->
+    <title>Srinath Sridhar</title>
+    <meta name="robots" content="index,follow"/>
+    <meta name="description" content="Srinath Sridhar. Assistant Professor at Brown University."/>
+    <meta name="keywords"
+          content="srinath, sridhar, computer vision, human-computer interaction, HCI, Brown University, Brown, Stanford University, Stanford, Microsoft Research, Max Planck Institute for Informatics, MPI-INF, Germany, India, hand tracking, pose estimation, gesture, free-hand interaction, computer vision tracking, 6D pose estimation, physical interaction understanding, human hand, physical skills, digitize humans"/>
+    <link rel="author" href="http://srinathsridhar.com/"/>
+
+    <!-- ============================================================
+         Fonts & Stylesheets
+         ============================================================ -->
     <link href='https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap' rel='stylesheet'/>
     <link rel="stylesheet" type="text/css" href="css/homepage.css" media="screen"/>
     <link rel="stylesheet" type="text/css" media="screen" href="css/iconize.css"/>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- ============================================================
+         Google Analytics
+         ============================================================ -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJC5B6ERTM"></script>
     <script>
-          $(function()
-          {
-                $('#header').load('header.html');
-                $('#footer').load('footer.html');
-                $('#title').load('title.html');
-          });
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RJC5B6ERTM');
     </script>
-    <div id="header"></div>
+    <script>
+       try {
+          var s = document.createElement('script');
+          s.src = 'https://ipmeta.io/plugin.js';
+          s.onload = function() {
+             if (typeof provideGtagPlugin === 'function') {
+                provideGtagPlugin({
+                   apiKey: '3f5466446df3385629c5b51762c090a6111f5dfd0b13b5fa9ee1e1870c4c78ff8938e001c33c24c0',
+                   serviceProvider: 'dimension1',
+                   networkDomain: 'dimension2',
+                   networkType: 'dimension3',
+                });
+             }
+          };
+          document.head.appendChild(s);
+       } catch(e) {}
+    </script>
 </head>
 
 <body>
 <div id="content">
     <div id="content-inner">
 
-        <div id="title"></div>
+        <!-- ============================================================
+             HERO SECTION
+             Left column: profile photo + quick links (CV, Scholar, etc.)
+             Right column: name, title, affiliation, contact, updates
+             ============================================================ -->
+        <div class="hero">
 
+            <!-- Profile photo and quick links -->
+            <div class="hero-left">
+                <div class="hero-photo">
+                    <!-- Replace images/www.jpg with your profile photo -->
+                    <img src="images/www.jpg" alt="Srinath Sridhar"/>
+                </div>
+                <div class="hero-links">
+                    <!-- Quick links — add/remove as needed -->
+                    <a href="misc/srinath_sridhar_cv.pdf" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> CV</a>
+                    <a href="http://scholar.google.com/citations?user=qIvZT74AAAAJ&hl=en" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg> Scholar</a>
+                    <a href="https://github.com/drsrinathsridhar" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg> Github</a>
+                    <a href="https://twitter.com/drsrinathsridha" target="_blank"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg> Twitter</a>
+                </div>
+            </div>
+
+            <!-- Name, title, and contact info -->
+            <div class="hero-info">
+                <a href="http://cs.brown.edu/" target="_blank"><img src="images/brown.png" class="uni-logo" alt="Brown University"/></a>
+                <h1>Srinath Sridhar</h1>
+                <p class="hero-title">John E. Savage Assistant Professor</p>
+                <p class="hero-affil"><a href="https://cs.brown.edu/" target="_blank">Department of Computer Science</a>, <a href="https://brown.edu/" target="_blank">Brown University</a></p>
+                <p class="hero-contact"><a href="mailto:srinath@brown.edu">srinath@brown.edu</a>&ensp;&middot;&ensp;<a href="https://maps.google.com/?q=115+Waterman+Street,+Providence,+RI+02912" target="_blank">CIT 407, 115 Waterman Street, Providence, RI 02912</a></p>
+                <!-- Updates banner -->
+                <div class="hero-updates">
+                    <h3>Updates</h3>
+                    <p>Please see the <a href="https://ivl.cs.brown.edu/" target="_blank">group page</a> for updates.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ============================================================
+             MAIN CONTENT CARD
+             Contains the navigation tabs and biography text.
+             To edit bio content, modify the <p> tags below.
+             ============================================================ -->
         <div class="card">
-        <nav id="tabs">
-            <a href="index.html" class="selected">About</a>
-            <a href="https://ivl.cs.brown.edu/research" target="_blank">Publications</a>
-            <a href="https://ivl.cs.brown.edu/" target="_blank">Group</a>
-            <a href="https://ivl.cs.brown.edu/teaching" target="_blank">Teaching</a>
-        </nav>
-        <div class="section bio-text">
-            <p>I am the John E. Savage Assistant Professor in the <a href="https://cs.brown.edu/" target="_blank">Department of Computer Science</a> at <a href="https://brown.edu/" target="_blank">Brown University</a> where I lead the <a href="https://ivl.cs.brown.edu/" target="_blank">Interactive 3D Vision & Learning Lab (IVL)</a>. My research is in <b>3D computer vision and artificial intelligence</b>. Specifically, I build foundational methods for 3D spatiotemporal (4D) visual understanding of the world including objects in it, humans in motion, and human-object interactions.</p>
-            <p>I am a recipient of an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2143576" target="_blank">NSF CAREER award</a> and a <a href="https://research.google/programs-and-events/research-scholar-program/recipients/?filtertab=2021" target="_blank">Google Research Scholar award</a>. My team's research has been recognized with a <a href="https://ivl.cs.brown.edu/research/geodiffuser.html" target="_blank">Best Student Paper award</a> at WACV 2025, and a <a href="https://storage.googleapis.com/pirk.io/projects/learning_interactions/index.html" target="_blank">Best Paper Honorable Mention award</a> at Eurographics 2019.</p>
-            <p>I was previously a postdoc at <a href="http://cs.stanford.edu/" target="_blank">Stanford University</a> with <a href="https://geometry.stanford.edu/member/guibas/index.html" target="_blank">Leonidas Guibas</a>, an <a href="https://www.amazon.science/scholars" target="_blank">Amazon Scholar</a>, and a <a href="https://kiac.iisc.ac.in/the-team-2/the-team/" target="_blank">Visiting Faculty</a> at the Indian Institute of Science (IISc). I obtained my <a href="pubs/Dissertation_SrinathSridhar.pdf" target="_blank">PhD</a> at the <a href="http://www.mpi-inf.mpg.de" target="_blank">Max Planck Institute for Informatics</a> advised by <a href="http://www.mpi-inf.mpg.de/~theobalt/" target="_blank">Christian Theobalt</a> and <a href="http://users.comnet.aalto.fi/oulasvir/" target="_blank">Antti Oulasvirta</a>. I have also spent time at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-redmond/" target="_blank">Microsoft Research Redmond</a>, the <a href="http://umich.edu" target="_blank">University of Michigan, Ann Arbor</a>, the <a href="http://www.honda-ri.com/HRI_Us/" target="_blank">Honda Research Institute</a>, and <a href="https://ceg.annauniv.edu/" target="_blank">College of Engineering Guindy</a>.</p>
-        </div>
+
+            <!-- Navigation tabs — links to external group pages -->
+            <nav id="tabs">
+                <a href="index.html" class="selected">About</a>
+                <a href="https://ivl.cs.brown.edu/research" target="_blank">Publications</a>
+                <a href="https://ivl.cs.brown.edu/" target="_blank">Group</a>
+                <a href="https://ivl.cs.brown.edu/teaching" target="_blank">Teaching</a>
+            </nav>
+
+            <!-- Biography — each <p> is a paragraph. Add or remove as needed. -->
+            <div class="section bio-text">
+                <!-- Paragraph 1: Current role and research focus -->
+                <p>I am the John E. Savage Assistant Professor in the <a href="https://cs.brown.edu/" target="_blank">Department of Computer Science</a> at <a href="https://brown.edu/" target="_blank">Brown University</a> where I lead the <a href="https://ivl.cs.brown.edu/" target="_blank">Interactive 3D Vision & Learning Lab (IVL)</a>. My research is in <b>3D computer vision and artificial intelligence</b>. Specifically, I build foundational methods for 3D spatiotemporal (4D) visual understanding of the world including objects in it, humans in motion, and human-object interactions.</p>
+
+                <!-- Paragraph 2: Awards and recognition -->
+                <p>I am a recipient of an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2143576" target="_blank">NSF CAREER award</a> and a <a href="https://research.google/programs-and-events/research-scholar-program/recipients/?filtertab=2021" target="_blank">Google Research Scholar award</a>. My team's research has been recognized with a <a href="https://ivl.cs.brown.edu/research/geodiffuser.html" target="_blank">Best Student Paper award</a> at WACV 2025, and a <a href="https://storage.googleapis.com/pirk.io/projects/learning_interactions/index.html" target="_blank">Best Paper Honorable Mention award</a> at Eurographics 2019.</p>
+
+                <!-- Paragraph 3: Background and previous positions -->
+                <p>I was previously a postdoc at <a href="http://cs.stanford.edu/" target="_blank">Stanford University</a> with <a href="https://geometry.stanford.edu/member/guibas/index.html" target="_blank">Leonidas Guibas</a>, an <a href="https://www.amazon.science/scholars" target="_blank">Amazon Scholar</a>, and a <a href="https://kiac.iisc.ac.in/the-team-2/the-team/" target="_blank">Visiting Faculty</a> at the Indian Institute of Science (IISc). I obtained my <a href="pubs/Dissertation_SrinathSridhar.pdf" target="_blank">PhD</a> at the <a href="http://www.mpi-inf.mpg.de" target="_blank">Max Planck Institute for Informatics</a> advised by <a href="http://www.mpi-inf.mpg.de/~theobalt/" target="_blank">Christian Theobalt</a> and <a href="http://users.comnet.aalto.fi/oulasvir/" target="_blank">Antti Oulasvirta</a>. I have also spent time at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-redmond/" target="_blank">Microsoft Research Redmond</a>, the <a href="http://umich.edu" target="_blank">University of Michigan, Ann Arbor</a>, the <a href="http://www.honda-ri.com/HRI_Us/" target="_blank">Honda Research Institute</a>, and <a href="https://ceg.annauniv.edu/" target="_blank">College of Engineering Guindy</a>.</p>
+            </div>
+
         </div>
 
-        <div id="footer"></div>
+        <!-- ============================================================
+             FOOTER
+             ============================================================ -->
+        <div class="footer">
+            Last updated 2026.
+        </div>
+
     </div>
 </div>
-
-<script>
-            function toggleNews() {
-              var moreNews = document.getElementById("moreNews");
-              var moreNewsBtn = document.getElementById("moreNewsBtn");
-              var lessNewsBtn = document.getElementById("lessNewsBtn");
-              if (moreNewsBtn.style.display === "none") {
-                moreNews.style.display = "none";
-                moreNewsBtn.style.display = "inline";
-                lessNewsBtn.style.display = "none";
-              } else {
-                moreNews.style.display = "inline";
-                moreNewsBtn.style.display = "none";
-                lessNewsBtn.style.display = "inline";
-              }
-            }
-            function togglePubs() {
-              var morePubs = document.getElementById("morePubs");
-              var morePubsBtn = document.getElementById("morePubsBtn");
-              var lessPubsBtn = document.getElementById("lessPubsBtn");
-              if (morePubsBtn.style.display === "none") {
-                morePubs.style.display = "none";
-                morePubsBtn.style.display = "inline";
-                lessPubsBtn.style.display = "none";
-              } else {
-                morePubs.style.display = "inline";
-                morePubsBtn.style.display = "none";
-                lessPubsBtn.style.display = "inline";
-              }
-            }
-</script>
 
 </body>
 </html>
