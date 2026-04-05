@@ -1,199 +1,369 @@
-/* This is a CSS template for a CS PhD student's academic homepage.
-   For academic purposes, this file may be considered to be in public
-   domain. So, feel free to reuse.
+/* Modern academic homepage — Brown University
+   Brown: #4E3629  Red: #C41230  Gold: #FFC72C  Bg: #FAFAF8 */
 
-   Author: Srinath Sridhar (srinaths@umich.edu, srinathsridhar.com)
-   Last updated: 2017-Feb for Stanford colors and font
-   https://identity.stanford.edu/web-toolkit/
-*/
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* Main page */
-html, body
-{
-    margin:10px 0px;
-    padding:0px;
-    text-align:center;
-    background-color: #f2f1eb;
-}
+html { font-size: 16px; scroll-behavior: smooth; }
 
-/* Global settings for hyperlinks and hr */
-a:link { color: #820000; text-decoration: none; }
-a.empty { color: #820000; text-decoration: none; }
-a:visited { color: #8C1515; text-decoration: none; }
-a:hover { color: #FF4B33; text-decoration: none; }
-a:active { color: #FF4B33; text-decoration: none; }
-hr.smooth
-{
-    border: 0;
-    height: 1px;
-    width: 100%;
-    background: #333;
-    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
-    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc); 
-    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc); 
-    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc); 
-}
-
-/* Main content div */
-#content 
-{
-    width:auto;
-    max-width:1000px;
-    min-width:1000px;
-    height: auto !important;
-    height: 100%;
-    /*min-height: 100%;*/
-    margin:0 auto;
-    text-align:left;
-    border:2px solid #8a887d;
-    background-color: white;
-    box-shadow: 0px 1px 5px #999;
-    font-family: 'Source Sans Pro', sans-serif;
-    /*font-family: 'Open Sans', sans-serif;*/
-    font-size: 14pt;
-    /* line-height: 2; */
-    -webkit-text-size-adjust: none;
+body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: #FAFAF8;
+    color: #333;
+    line-height: 1.75;
     -webkit-font-smoothing: antialiased;
-}
-#content-inner
-{
-    padding:15px 0;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
-/* For paragraphs */
-.publist {width: 900px; margin: 0; margin-top: 10px; margin-bottom: 10px; border: 1px solid #8a887d; padding: 5px; background-color: #f6f3e5;}
+/* ── Links ─────────────────────────────────────────── */
+a         { color: #C41230; text-decoration: none; transition: color 0.15s; }
+a.empty   { color: #C41230; }
+a:visited { color: #9E0E27; }
+a:hover   { color: #E8173A; text-decoration: underline; }
 
-/* For people */
-#block_container
-{
+/* ── Layout container ──────────────────────────────── */
+#content {
+    max-width: 960px;
+    min-width: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: left;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    font-size: 0.95rem;
+    height: auto !important;
+}
+#content-inner { padding: 0; }
+
+/* ── Hero section ──────────────────────────────────── */
+.hero {
     display: flex;
-    justify-content: left;
-    margin-right: 200px;
+    align-items: flex-start;
+    gap: 2.5rem;
+    padding: 2rem 0 1rem 0;
 }
-.personlist
-{
-    width: 130px;
+
+/* Left column: photo + link pills */
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.hero-photo img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 6px 24px rgba(78, 54, 41, 0.14);
+}
+
+.hero-left .hero-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    justify-content: center;
+    max-width: 210px;
+}
+.hero-left .hero-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.3rem 0.7rem;
+    background: #fff !important;
+    background-image: none !important;
+    border: 1.5px solid #E0DBD4;
+    border-radius: 100px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #4E3629;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+.hero-left .hero-links a:visited { color: #4E3629; }
+.hero-left .hero-links a:hover {
+    background: #4E3629 !important;
+    border-color: #4E3629;
+    color: #fff;
+    text-decoration: none;
+}
+.hero-left .hero-links a svg {
+    flex-shrink: 0;
+    opacity: 0.65;
+    transition: opacity 0.15s;
+}
+.hero-left .hero-links a:hover svg { opacity: 1; }
+
+/* Right column: info */
+.hero-info {
+    flex: 1;
+    padding-top: 0;
+}
+
+.hero-info .uni-logo {
+    height: 52px;
+    margin-bottom: 0.5rem;
+    opacity: 0.75;
+    transition: opacity 0.2s;
+}
+.hero-info .uni-logo:hover { opacity: 1; }
+
+.hero-info h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #1A1A1A;
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+    margin: 0 0 0.35rem 0;
+}
+
+.hero-title {
+    font-size: 1rem;
+    color: #4E3629;
+    font-weight: 500;
+    margin: 0 0 0.1rem 0;
+}
+
+.hero-affil {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 0 0.3rem 0;
+}
+.hero-affil a { color: #666; }
+.hero-affil a:hover { color: #C41230; }
+
+.hero-contact {
+    font-size: 0.82rem;
+    color: #888;
+    margin: 0 0 0.8rem 0;
+}
+.hero-contact a { color: #888; }
+.hero-contact a:hover { color: #C41230; }
+
+/* Updates inside hero-info */
+.hero-updates {
+    margin-top: 0.6rem;
+    padding: 0.6rem 0.9rem;
+    background: #F5F3EF;
+    border-radius: 8px;
+    border-left: 3px solid #C41230;
+}
+.hero-updates h3 {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #4E3629;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 0.15rem 0;
+}
+.hero-updates p {
+    font-size: 0.85rem;
+    color: #555;
     margin: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #8a887d;
-    padding: 5px;
-    background-color: #f6f3e5;
+    line-height: 1.5;
 }
 
-
-/* For highlighting */
-.highlight
-{
-    width: 650px;
-    margin: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #8a887d;
-    padding: 5px;
-    background-color: #f6f3e5;
-    float: right;
+/* ── Navigation ────────────────────────────────────── */
+nav#tabs {
+    display: flex;
+    gap: 0.15rem;
+    padding: 0 0 0.75rem 0;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid #ECEAE5;
+    list-style: none;
+}
+nav#tabs a {
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #888;
+    border-radius: 8px;
+    transition: all 0.15s;
+    text-decoration: none;
+}
+nav#tabs a:hover {
+    color: #4E3629;
+    background: rgba(78, 54, 41, 0.06);
+    text-decoration: none;
+}
+nav#tabs a.selected {
+    color: #fff;
+    background: #4E3629;
 }
 
-/* From https://www.cs.columbia.edu/~shurans/style.css */
-#moreNews {
-    display: none;
-}
-
-#lessNewsBtn {
-    display: none;
-}
-
-
-/* Tabs control */
-/* 1000, 800 . Change below to adjust for main page width*/
-div.tabContent { width: 960px; margin: 0 auto; border: 1px solid #8a887d; padding: 0.5em; background-color: #f2f1eb; }
-div.tabContent.hide { display: none; }
-ul#tabs { list-style-type: none; margin: 30px 0 0 11px; padding: 0 0 0.3em 0; }
+/* Legacy ul#tabs */
+ul#tabs { list-style: none; display: flex; gap: 0.15rem; padding: 0 0 1rem 0; border: none; margin: 0; }
 ul#tabs li { display: inline; }
-ul#tabs li a { color: #42454a; background-color: #e3dfd5; border: 1px solid #8a887d; border-bottom: none; padding: 0.3em; text-decoration: none; }
-ul#tabs li a:hover { background-color: #d5d0c0; }
-ul#tabs li a.selected { color: #000; background-color: #f2f1eb; font-weight: 500; padding: 0.7em 0.3em 0.38em 0.3em; }
+ul#tabs li a { display: inline-block; padding: 0.4rem 0.9rem; font-size: 0.85rem; font-weight: 600; color: #888; border-radius: 8px; transition: all 0.15s; text-decoration: none; background: transparent; border: none; }
+ul#tabs li a:hover { color: #4E3629; background: rgba(78, 54, 41, 0.06); text-decoration: none; }
+ul#tabs li a.selected { color: #fff; background: #4E3629; }
 
-/* Page sections */
-/* Some of this has been copied from http://www.mpi-inf.mpg.de/resources/rgbz-camera/ */
-.section
-{
-	margin: 15px 5px 5px 10px;
-	line-height: 150%;
-	-webkit-font-smoothing: antialiased; 
+/* ── Sections & bio ───────────────────────────────── */
+.section {
+    margin: 0;
+    padding: 0;
+    line-height: 1.75;
+}
+.section h3 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #4E3629;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 0.75rem 0;
 }
 
-/* Logo section. */
-.logos { margin: 1.5em 0; text-align: center; margin-top:5px; margin-bottom:10px; }
-.logos img { vertical-align:top; margin:0 1.25em; border:0; }
+.bio-text {
+    font-size: 0.92rem;
+    color: #444;
+    line-height: 1.7;
+    padding: 0;
+}
+.bio-text p {
+    margin: 0 0 0.6rem 0;
+}
+.bio-text p:last-child {
+    margin-bottom: 0;
+}
 
-/* Page header. */
-.head { text-align: left; margin: 0.5em 0; padding: 0.5em 2em; background-color:#f2f1eb; text-shadow: 1px 1px 3px #cccccc; }
-.head { color: #111; }
-.head h1 { font-size: 24pt; line-height:27pt; margin: 10px 0; }
-.head h1 a { text-decoration:none; }
-.authors { font-size: 12pt; margin: 0 0 1em 0; }
-.affiliations { font-size: 11pt; margin: -0.5em 0 10pt 0; }
-.venue { font-style:italic; font-size: 12pt; margin: 1em 0 1em 0; }
+hr.smooth {
+    border: none;
+    height: 1px;
+    background: #ECEAE5;
+    margin: 1.5rem 0;
+}
 
-/* Page footer */
-.footer { margin: 15px 5px 5px 10px; line-height: 130%; /*margin-left:auto; margin-right:auto;*/ }
+/* ── Cards (if needed) ────────────────────────────── */
+.card {
+    background: #fff;
+    border: 1px solid #ECEAE5;
+    border-radius: 12px;
+    padding: 1.5rem 1.75rem;
+    margin-bottom: 1rem;
+}
 
-/* Specific section styling. */
+/* ── Tab content (legacy) ─────────────────────────── */
+div.tabContent { width: auto; margin: 0; border: none; padding: 0; background: transparent; }
+div.tabContent.hide { display: none; }
+
+/* ── Old head class ───────────────────────────────── */
+.head {
+    text-align: left; margin: 0; padding: 2rem 0; background: transparent;
+    color: #1A1A1A; text-shadow: none; overflow: hidden;
+}
+.head h1 { font-size: 2.4rem; font-weight: 700; line-height: 1.1; margin: 0 0 0.4rem 0; color: #1A1A1A; letter-spacing: -0.04em; }
+.head a { color: #4E3629; }
+.head a:hover { color: #C41230; text-decoration: none; }
+
+/* ── Footer ───────────────────────────────────────── */
+.footer {
+    padding: 1.5rem 0 2.5rem 0;
+    font-size: 0.78rem;
+    color: #B0A89E;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+.footer::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #D4CEC6;
+    margin: 0 auto 1rem auto;
+    border-radius: 1px;
+}
+
+/* ── Legacy elements ──────────────────────────────── */
+.authors      { font-size: 0.95rem; color: #555; margin: 0 0 1em 0; }
+.affiliations { font-size: 0.9rem; color: #666; }
+.venue        { font-style: italic; font-size: 0.95rem; margin: 1em 0; }
+.logos     { margin: 1.5em 0; text-align: center; }
+.logos img { vertical-align: top; margin: 0 1.25em; border: 0; }
+.publist { width: 100%; max-width: 900px; margin: 0.75rem 0; border: 1px solid #ECEAE5; padding: 1rem; background: #fff; border-radius: 8px; }
+#block_container { display: flex; justify-content: left; flex-wrap: wrap; gap: 1rem; }
+.personlist { width: 130px; margin: 0.75rem 0; border: 1px solid #ECEAE5; padding: 0.5rem; background: #fff; border-radius: 8px; }
+.highlight { width: 650px; margin: 0.75rem 0; border: 1px solid #ECEAE5; padding: 0.5rem; background: #fff; float: right; border-radius: 8px; }
+#moreNews    { display: none; }
+#lessNewsBtn { display: none; }
 .teaser { margin: 1.5em 0; text-align: center; }
 div.content-primary .teaser p img { display: block; float: none; border: 0; margin: 4em auto 1em auto; }
-.abstract { line-height: 130%; }
+.abstract   { line-height: 1.5; }
 .abstract p { margin-top: 0; }
 .downloads ul { margin-top: 0.5em; }
-.bibtex pre { margin-bottom: 0; font-family: Consolas, Monaco, monospace;}
-.acknowledgments { line-height: 130%; }
+.bibtex pre { margin-bottom: 0; font-family: 'JetBrains Mono', Consolas, monospace; font-size: 0.85rem; }
+.acknowledgments   { line-height: 1.5; }
 .acknowledgments p { margin-top: 0; }
-.contact { line-height: 130%; }
-
-.heading { margin: 2.5em 0; text-align: center; }
+.contact { line-height: 1.5; }
+.heading  { margin: 2.5em 0; text-align: center; }
 .datasets { width: 650px; margin: 3em auto; }
 .datasets ul { padding-bottom: 1em; }
-.dataset { float: left; width: 204px; margin: 5px 10px 15px 0px; text-align: center; }
-.dataset h2 { display: inline; }
+.dataset     { float: left; width: 204px; margin: 5px 10px 15px 0; text-align: center; }
+.dataset h2  { display: inline; }
 .dataset img { border: 2px solid #222; margin: 0.25em auto; display: block; }
-.backlink { text-align: center; }
+.backlink    { text-align: center; }
+li.pgrid { width: auto; height: 100px; display: inline-block; vertical-align: top; margin: 5px; }
+.pgriditem { font-size: 0.85rem; text-align: center; padding: 5px; }
+.pgriditem img { height: 100px; width: auto; border: 1px solid #eee; box-shadow: 0 1px 4px rgba(0,0,0,0.1); border-radius: 4px; }
+#teaseimg { height: auto; width: 50%; box-shadow: 0 2px 12px rgba(0,0,0,0.15); border: 1px solid #ddd; border-radius: 4px; }
 
-/* For displaying projects with a thumbnail image on the left and description on the right */
-/* Display lists in a grid of fixed size. This is useful when lists have associated images. */
-/* Idea from http://blog.mozilla.org/webdev/2009/02/20/cross-browser-inline-block/ */
-li.pgrid
-{
-    width: auto;
-    height: 100px;
-    /* border: 1px solid #000; */
-    display: -moz-inline-stack;
-    display: inline-block;
-    vertical-align: top;
-    margin: 5px;
-    zoom: 1;
-    *display: inline;
-    _height: 100px;
+/* ── SVG icon vertical alignment (cross-browser) ── */
+.hero-left .hero-links a svg {
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
 }
-/* Formatting for each item in a 2D grid. This is used typically in the downloads section. */
-.pgriditem
-{
-    font-size: 10pt;
-    text-align: center;
-    padding: 5px 5px 5px 5px;
+
+/* ── Responsive: tablet ───────────────────────────── */
+@media (max-width: 860px) {
+    #content { padding: 0 1.5rem; }
+    .hero { gap: 2rem; }
+    .hero-info h1 { font-size: 2rem; }
+    .hero-photo img { width: 160px; height: 160px; }
 }
-.pgriditem img
-{
-    text-align: center;
-    height:100px;
-    width:auto;
-    border: 1px solid #eee;
-    box-shadow: 0px 0px 2px #444444;
+
+/* ── Responsive: mobile ───────────────────────────── */
+@media (max-width: 600px) {
+    #content {
+        padding: 0 1rem;
+        padding-left: max(1rem, env(safe-area-inset-left));
+        padding-right: max(1rem, env(safe-area-inset-right));
+    }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.25rem;
+        padding: 1.5rem 0 1rem 0;
+    }
+    .hero-left { max-width: 100%; }
+    .hero-left .hero-links {
+        max-width: 100%;
+        justify-content: center;
+    }
+    .hero-photo img { width: 140px; height: 140px; }
+    .hero-info h1 { font-size: 1.6rem; }
+    .hero-info .uni-logo { height: 40px; }
+    .hero-updates { text-align: left; }
+    .card { padding: 1rem 1.25rem; border-radius: 10px; }
+    .publist, .highlight { width: 100%; }
+    nav#tabs, ul#tabs { flex-wrap: wrap; justify-content: center; gap: 0.25rem; }
+    nav#tabs a, ul#tabs li a { padding: 0.35rem 0.7rem; font-size: 0.82rem; }
+    .bio-text { font-size: 0.88rem; }
+    .footer { padding: 1rem 0 2rem 0; }
 }
-#teaseimg
-{
-    height:auto;
-    width:50%;
-    box-shadow: 0px 0px 10px #444444;
-    border:1px solid #000000;
+
+/* ── Print styles ─────────────────────────────────── */
+@media print {
+    body { background: #fff; }
+    #content { max-width: 100%; padding: 0; }
+    .card { border: none; box-shadow: none; padding: 0; }
+    .hero-links a { border: 1px solid #999; }
+    nav#tabs { display: none; }
+    a { color: #333; }
+    a::after { content: " (" attr(href) ")"; font-size: 0.75rem; color: #666; }
 }

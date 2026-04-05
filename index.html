@@ -1,14 +1,14 @@
-<Service!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- Fonts and stuff -->
-<!--    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800' rel='stylesheet' type='text/css' />-->
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,700italic,800italic,400,700,800' rel='stylesheet' type='text/css'/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link href='https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap' rel='stylesheet'/>
     <link rel="stylesheet" type="text/css" href="css/homepage.css" media="screen"/>
     <link rel="stylesheet" type="text/css" media="screen" href="css/iconize.css"/>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
           $(function()
@@ -17,7 +17,6 @@
                 $('#footer').load('footer.html');
                 $('#title').load('title.html');
           });
-
     </script>
     <div id="header"></div>
 </head>
@@ -28,98 +27,22 @@
 
         <div id="title"></div>
 
-        <ul id="tabs">
-            <li><a href="index.html" class="selected">About</a></li>
-            <li><a href="https://ivl.cs.brown.edu/research">Publications</a></li>
-            <li><a href="https://ivl.cs.brown.edu/">Group</a></li>
-            <li><a href="https://ivl.cs.brown.edu/teaching">Teaching</a></li>
-        </ul>
-
-        <div class="tabContent" id="index.html">
-            <div class="section">
-                <img src="images/www.jpg" width="256" align="left" alt="Srinath Sridhar"
-                     style="margin-left:0px;margin-right:20px; border:1px solid #8a887d"/>
-                I am the John E. Savage Assistant Professor in the <a href="https://cs.brown.edu/" target="_blank">Department of Computer Science</a> at <a href="https://brown.edu/" target="_blank">Brown University</a> where I lead the <a href="https://ivl.cs.brown.edu/" target="_blank">Interactive 3D Vision & Learning Lab (IVL)</a>. My research is in <b>3D computer vision and artificial intelligence</b>. Specifically, I build foundational methods for 3D spatiotemporal (4D) visual understanding of the world including objects in it, humans in motion, and human-object interactions.<br/></br>
-		    
-		    I am a recipient of an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2143576" target="_blank">NSF CAREER award</a> and a <a href="https://research.google/programs-and-events/research-scholar-program/recipients/?filtertab=2021" target="_blank">Google Research Scholar award</a>. My research has been recognized with a <a href="https://ivl.cs.brown.edu/research/geodiffuser.html" target="_blank">Best Student Paper award</a> at WACV 2025, and a <a href="https://storage.googleapis.com/pirk.io/projects/learning_interactions/index.html" target="_blank">Best Paper Honorable Mention award</a> at Eurographics 2019.<br/><br/>
-
-		Outside of Brown, I spend part of my time as an <a href="https://www.amazon.science/scholars" target="_blank">Amazon Scholar</a> and a <a href="https://kiac.iisc.ac.in/the-team-2/the-team/" target="_blank">Visiting Faculty</a> at the Indian Institute of Science (IISc). I was previously a postdoc at <a href="http://cs.stanford.edu/" target="_blank">Stanford University</a> with <a href="https://geometry.stanford.edu/member/guibas/index.html" target="_blank">Leonidas Guibas</a>. I obtained my <a href="pubs/Dissertation_SrinathSridhar.pdf" target="_blank">PhD</a> at the <a href="http://www.mpi-inf.mpg.de" target="_blank">Max Planck Institute for Informatics</a> advised by <a href="http://www.mpi-inf.mpg.de/~theobalt/" target="_blank">Christian Theobalt</a> and <a href="http://users.comnet.aalto.fi/oulasvir/" target="_blank">Antti Oulasvirta</a>. I have also spent time at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-redmond/" target="_blank">Microsoft Research Redmond</a>, the <a href="http://umich.edu" target="_blank">University of Michigan, Ann Arbor</a>, the <a href="http://www.honda-ri.com/HRI_Us/" target="_blank">Honda Research Institute</a>, and <a href="https://ceg.annauniv.edu/" target="_blank">College of Engineering Guindy</a>.<br/><br/>
-
-                <center>
-                    <a href="misc/srinath_sridhar_cv.pdf" target="_blank">CV</a>
-                    &nbsp;/&nbsp; <a href="http://scholar.google.com/citations?user=qIvZT74AAAAJ&hl=en" target="_blank">Google
-                    Scholar</a>
-                    <!-- &nbsp;/&nbsp; <a href="https://www.semanticscholar.org/author/Srinath-Sridhar/143627559" -->
-                                     <!-- target="_blank">Semantic Scholar</a> -->
-                    &nbsp;/&nbsp; <a href="https://github.com/drsrinathsridhar" target="_blank">Github</a>
-                    &nbsp;/&nbsp; <a href="https://twitter.com/drsrinathsridha" target="_blank">Twitter</a><br/>
-                     <h3><a href="mailto:srinath@brown.edu">srinath@brown.edu</a></h3>			
-                </center>
-
-            <div class="section">
-                <hr class="smooth">
-                <h3>Updates</h3>
-                <p>
-			Please see the <a href="https://ivl.cs.brown.edu/" target="_blank">group page</a> for updates.
-<!--                <ul>
-		<li><img src="images/new.gif"> [ Jun-2022 ]: We are looking for postdocs to join us at Brown. Please see <a href="https://forms.gle/5WUd2HFxYzUBwjTD6" target="_blank">this link</a> for more information.</li>
-                <li><img src="images/new.gif"> [ Jun-2022 ]: At CVPR, we will be presenting a paper on 3D pose canonicalization (ConDor) and a tutorial on neural fields. Please see the <a href="https://ivl.cs.brown.edu/ConDor/" target="_blank">ConDor project page</a> and <a href="https://neuralfields.cs.brown.edu/cvpr22.html" target="_blank">Neural Fields tutorial page</a> for more details.</li>
-                <li><img src="images/new.gif"> [ Apr-2022 ]: Our Eurographics STAR <a href="https://neuralfields.cs.brown.edu/" target="_blank">report and companion website</a> provides a consolidated overview of coordinate-based neural networks (<b>neural fields</b>) in visual computing and beyond by reviewing over 250 papers.</li>
-			<li>[ Mar-2022 ]: Srinath received the <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2143576" target="_blank">NSF CAREER award</a> that will help further the group's research on 3D perception of human physical skills.</li>
-                <span id="moreNews">
-			<li>[ Oct-2021 ]: I helped co-organize the <a href="https://ivl.cs.brown.edu/3DReps/" target="_blank">Second 3DReps workshop</a> at ICCV. The workshop recording is now available at <a href="https://youtu.be/4VKTE1Svl30" target="_blank">this link</a>.</li>
-			<li>[ Oct-2021 ]: <a href="https://geometry.stanford.edu/projects/humor/" target="_blank">HuMoR</a>, a human motion model for robust pose estimation will be presented at ICCV 2021.
-                    </li>			
-		<li>[ Apr-2021 ]: Srinath received a <a href="https://research.google/outreach/research-scholar-program/recipients/" target="_blank">Google Research Scholar</a> award to further the group's research on object-centric perception/synthesis for mixed reality.
-                    </li>
-		<li>[ Mar-2021 ]: Our upcoming <a href="https://aadilmehdis.github.io/DRACO-Project-Page/" target="_blank">ICRA paper</a> shows how to learn to densely reconstruct and canonicalize shapes with only weak supervision. Please see the <a href="https://aadilmehdis.github.io/DRACO-Project-Page/" target="_blank">project page</a> for details, code, and data.
-                    </li>
-                <li>[ Nov-2020 ]: Our upcoming <a href="https://neurips.cc/Conferences/2020/Schedule?type=Spotlight" target="_blank">NeurIPS spotlight</a> paper shows how to learn 3D canonical spatiotemporal representations of dynamically moving point clouds. Please see the <a href="https://geometry.stanford.edu/projects/caspr/" target="_blank">project page</a> for details.
-                    </li>
-        			<li>[ Aug-2020 ]: We organized the 3DReps Workshop at ECCV 2020. You can watch the recorded sessions on YouTube (Link: <a href="https://youtu.be/XaaiwCqEWI4" target="_blank">Session 1</a>, <a href="https://youtu.be/BskUrVASLB4" target="_blank">Session 2</a>).
-                    </li>
-			
-					<li>[ Aug-2020 ]: Upcoming paper at ECCV on <a href="https://geometry.stanford.edu/projects/pix2surf/" target="_blank">sparse multiview 3D surface recontruction</a> aka <b>Pix2Surf</b>.
-                    </li>
-                    
-					<li>[ Jan-2020 ]: I am serving on the program committee (Area Chair) for <a href="http://ieeevr.org/2020/" target="_blank">IEEE VR 2020</a>.
-                    </li>
-					<li>[ Jan-2020 ]: Paper on <a href="https://geometry.stanford.edu/projects/learningdynamicsWACV2020/" target="_blank">predicting object dynamics</a> of previously unseen objects accepted to WACV.
-                    </li>
-                    <li>[ Dec-2019 ]: <a href="https://davrempe.github.io/" target="_blank">Davis Rempe</a> is presenting our paper on <a href="https://geometry.stanford.edu/projects/xnocs/" target="_blank">multi-view aggregation for 3D reconstruction</a> at NeurIPS. <a href="https://github.com/drsrinathsridhar/xnocs" target="_blank">Code and datasets are available</a>.
-                    </li>
-                    <li>[ Jun-2019 ]: <a
-                            href="https://www.youtube.com/watch?v=Vz2yDmrVURQ"
-                            target="_blank">Watch the interview</a> we did for our CVPR 2019 paper:
-                    </li><br />
-					<iframe width="280" height="158" src="https://www.youtube.com/embed/Vz2yDmrVURQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <li>[ May-2019 ]: Our <a
-                            href="https://storage.googleapis.com/pirk.io/projects/learning_interactions/index.html"
-                            target="_blank">paper</a> on learning to generate human-object interactions was awarded an
-                        <a href="misc/photos/EG2019_HonMention_crop.jpg" target="_blank"><b>honorable mention</b></a> at
-                        Eurographics 2019. Read my blog post on this work on the <a
-                                href="http://ai.stanford.edu/blog/generate-human-object/" target="_blank">SAIL Blog</a>.
-                    </li>
-                    <li>[ Mar-2019 ]: Can we estimate the 6D pose and size of novel object
-                        instances never encountered before? Our upcoming <a href="https://arxiv.org/abs/1901.02970"
-                                                                            target="_blank">CVPR oral paper</a> shows
-                        one way (<a href="https://youtu.be/UsfoLcInlhM" target="_blank">video</a>).
-                    </li>
-                    <li>[ Mar-2019 ]: <a href="https://twitter.com/drsrinathsridha/status/1113314946136268800"
-                                         target="_blank">Read my Twitter thread</a> about interesting hand facts that
-                        you may not have known before.
-                    </li>
-                    </span>
-                    <div onclick="toggleNews()" id="moreNewsBtn" class="showBtn"><a class="empty">+ More...</a></div>
-                    <div onclick="toggleNews()" id="lessNewsBtn" class="showBtn"><a class="empty">- Less...</a></div>
-                </ul>-->
-                </p>
-            </div>
+        <div class="card">
+        <nav id="tabs">
+            <a href="index.html" class="selected">About</a>
+            <a href="https://ivl.cs.brown.edu/research" target="_blank">Publications</a>
+            <a href="https://ivl.cs.brown.edu/" target="_blank">Group</a>
+            <a href="https://ivl.cs.brown.edu/teaching" target="_blank">Teaching</a>
+        </nav>
+        <div class="section bio-text">
+            <p>I am the John E. Savage Assistant Professor in the <a href="https://cs.brown.edu/" target="_blank">Department of Computer Science</a> at <a href="https://brown.edu/" target="_blank">Brown University</a> where I lead the <a href="https://ivl.cs.brown.edu/" target="_blank">Interactive 3D Vision & Learning Lab (IVL)</a>. My research is in <b>3D computer vision and artificial intelligence</b>. Specifically, I build foundational methods for 3D spatiotemporal (4D) visual understanding of the world including objects in it, humans in motion, and human-object interactions.</p>
+            <p>I am a recipient of an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2143576" target="_blank">NSF CAREER award</a> and a <a href="https://research.google/programs-and-events/research-scholar-program/recipients/?filtertab=2021" target="_blank">Google Research Scholar award</a>. My team's research has been recognized with a <a href="https://ivl.cs.brown.edu/research/geodiffuser.html" target="_blank">Best Student Paper award</a> at WACV 2025, and a <a href="https://storage.googleapis.com/pirk.io/projects/learning_interactions/index.html" target="_blank">Best Paper Honorable Mention award</a> at Eurographics 2019.</p>
+            <p>I was previously a postdoc at <a href="http://cs.stanford.edu/" target="_blank">Stanford University</a> with <a href="https://geometry.stanford.edu/member/guibas/index.html" target="_blank">Leonidas Guibas</a>, an <a href="https://www.amazon.science/scholars" target="_blank">Amazon Scholar</a>, and a <a href="https://kiac.iisc.ac.in/the-team-2/the-team/" target="_blank">Visiting Faculty</a> at the Indian Institute of Science (IISc). I obtained my <a href="pubs/Dissertation_SrinathSridhar.pdf" target="_blank">PhD</a> at the <a href="http://www.mpi-inf.mpg.de" target="_blank">Max Planck Institute for Informatics</a> advised by <a href="http://www.mpi-inf.mpg.de/~theobalt/" target="_blank">Christian Theobalt</a> and <a href="http://users.comnet.aalto.fi/oulasvir/" target="_blank">Antti Oulasvirta</a>. I have also spent time at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-redmond/" target="_blank">Microsoft Research Redmond</a>, the <a href="http://umich.edu" target="_blank">University of Michigan, Ann Arbor</a>, the <a href="http://www.honda-ri.com/HRI_Us/" target="_blank">Honda Research Institute</a>, and <a href="https://ceg.annauniv.edu/" target="_blank">College of Engineering Guindy</a>.</p>
+        </div>
         </div>
 
         <div id="footer"></div>
     </div>
-</div>
 </div>
 
 <script>
