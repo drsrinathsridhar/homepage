@@ -12,12 +12,14 @@
 <script src="https://ipmeta.io/plugin.js"></script>
 
 <script>
-   provideGtagPlugin({
-      apiKey: '3f5466446df3385629c5b51762c090a6111f5dfd0b13b5fa9ee1e1870c4c78ff8938e001c33c24c0',
-      serviceProvider: 'dimension1',
-      networkDomain: 'dimension2',
-      networkType: 'dimension3',
-   });
+   if (typeof provideGtagPlugin === 'function') {
+      provideGtagPlugin({
+         apiKey: '3f5466446df3385629c5b51762c090a6111f5dfd0b13b5fa9ee1e1870c4c78ff8938e001c33c24c0',
+         serviceProvider: 'dimension1',
+         networkDomain: 'dimension2',
+         networkType: 'dimension3',
+      });
+   }
 </script>
 
 <title>Srinath Sridhar</title>
